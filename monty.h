@@ -40,10 +40,23 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/*Arithmetic Fuction*/
+void cool_add(stack_t **stack, unsigned int line_number);
+void cool_sub(stack_t **stack, unsigned int line_number);
+void cool_div(stack_t **stack, unsigned int line_number);
+void cool_mul(stack_t **stack, unsigned int line_number);
+void cool_mod(stack_t **stack, unsigned int line_number);
 
+/*Monty Functions*/
+void cool_push(stack_t **stack, unsigned int current);
+void cool_pall(stack_t **stack, unsigned int line_number);
+void cool_pint(stack_t **stack, unsigned int line_number);
+void cool_pop(stack_t **stack, unsigned int line_number);
+void cool_swap(stack_t **stack, unsigned int line_number);
 
-
-
-
+/*Error Function*/
+int cool_pop_error(unsigned int line_number);
+int cool_pint_error(unsigned int line_number);
+int cool_stack_error(unsigned int line_number, char *p);
 
 #endif
