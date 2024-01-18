@@ -41,18 +41,14 @@ void cool_push(stack_t **stack, unsigned int current)
 		top->prev = *stack;
 		top->next = temp;
 		if (temp)
-		{
 			temp->prev = top;
-		}
 		(*stack)->next = top;
 	}
 	else
 	{
 		temp = *stack;
 		while (temp->next)
-		{
 			temp = temp->next;
-		}
 		top->prev = temp;
 		top->next = top;
 		top->next = NULL;
@@ -62,7 +58,7 @@ void cool_push(stack_t **stack, unsigned int current)
 /**
  * cool_pall - Prints value of lists
  * @stack: pointer head
- * line_number: integer number
+ * @line_number: integer number
  */
 void cool_pall(stack_t **stack, unsigned int line_number)
 {
