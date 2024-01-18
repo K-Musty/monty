@@ -5,31 +5,31 @@
  */
 void cool_token_error(int error_code)
 {
-	int toks_len = 0, k = 0;
-	char *exit_str = NULL;
-	char **new_toks = NULL;
+	int token_len = 0, k = 0;
+	char **token_s = NULL;
+	char *exit_s = NULL;
 
-	toks_len = __our_monty_token_arr_len();
-	new_toks = malloc(sizeof(char *) * (toks_len + 2));
+	token_len = cool_token_array_len();
+	token_s = malloc(sizeof(char *) * (token_len + 2));
 	if (!key_tok)
 	{
 		cool_malloc_error();
 		return;
 	}
-	while (k < toks_len)
+	while (k < token_len)
 	{
-		new_toks[i] = key_tok[i];
+		token_s[k] = key_tok[k];
 		k++;
 	}
-	exit_str = get_int(error_code);
-	if (!exit_str)
+	exit_s = get_int(error_code);
+	if (!exit_s)
 	{
-		free(new_toks);
+		free(token_s);
 		cool_malloc_error();
 		return;
 	}
-	new_toks[k++] = exit_str;
-	new_toks[k] = NULL;
+	token_s[k++] = exit_s;
+	token_s[k] = NULL;
 	free(key_tok);
-	key_tok = new_toks;
+	key_tok = token_s;
 }
