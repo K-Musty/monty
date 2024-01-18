@@ -9,7 +9,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-char **key_tok = NULL;
+extern char **key_tok = NULL;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -59,5 +59,5 @@ void cool_swap(stack_t **stack, unsigned int line_number);
 int cool_pop_error(unsigned int line_number);
 int cool_pint_error(unsigned int line_number);
 int cool_stack_error(unsigned int line_number, char *p);
-
+void cool_token_error(int error_code)
 #endif
