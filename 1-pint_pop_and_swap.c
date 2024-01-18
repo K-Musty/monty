@@ -1,6 +1,6 @@
 #include "monty.h"
 
-**
+/**
  * cool_pint - Function of pint
  * @stack: Pointer
  * @line_number: integer number

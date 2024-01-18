@@ -27,7 +27,7 @@ void cool_push(stack_t **stack, unsigned int current)
 	{
 		if (key_tok[1][k] == '-' && k == 0)
 			continue;
-		if (key_tok[1][k] < '0' || key_tok[1][i] > '9')
+		if (key_tok[1][k] < '0' || key_tok[1][k] > '9')
 		{
 			cook_token_error(cool_int_error(current));
 			return;
