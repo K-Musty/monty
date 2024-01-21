@@ -37,7 +37,7 @@ int cool_malloc_error(void)
  */
 int cool_open_error(char *file_name)
 {
-	fprintf(stderr, "Error: Can't open file %s\n", filename);
+	fprintf(stderr, "Error: Can't open file %s\n", file_name);
 	return (EXIT_FAILURE);
 }
 

@@ -9,6 +9,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+#define " \n\t\a\b"
 #define STACK 0
 #define QUEUE 1
 extern char **key_tok;
@@ -51,6 +52,7 @@ void cool_mul(stack_t **stack, unsigned int line_number);
 void cool_mod(stack_t **stack, unsigned int line_number);
 
 /*Monty Functions*/
+int cool_monty_run(FILE *script_fd);
 void cool_push(stack_t **stack, unsigned int current);
 void cool_pall(stack_t **stack, unsigned int line_number);
 void cool_pint(stack_t **stack, unsigned int line_number);
@@ -86,8 +88,14 @@ int cool_unknown_error(char *op_code, unsigned int line_number);
 /**Stdlib */
 char *get_int(int n);
 unsigned int cool_abs(int);
-int get_nbase_len(unsigned int num, unsigned int base);
+int get_nbase_len(unsigned int n, unsigned int b);
 void fill_nbase_buff(unsigned int num, unsigned int base,
 		       char *buff, int buff_size);
+
+int get_word_length(char *str, char *delims);
+int get_word_count(char *str, char *delims);
+char **strtow(char *str, char *delims);
+int is_delim(char ch, char *delims);
+char *get_next_word(char *str, char *delims);
 #endif
 

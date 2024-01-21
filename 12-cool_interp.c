@@ -34,7 +34,7 @@ char *get_int(int n)
 	if (!ret)
 		return (NULL);
 
-	fill_nbase_buffer(tmp, 10, ret, len);
+	fill_nbase_buff(tmp, 10, ret, len);
 	if (n < 0 || num < 0)
 		ret[0] = '-';
 
