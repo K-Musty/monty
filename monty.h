@@ -62,4 +62,6 @@ int cool_pop_error(unsigned int line_number);
 int cool_pint_error(unsigned int line_number);
 int cool_stack_error(unsigned int line_number, char *p);
 void cool_token_error(int error_code);
+int cool_div_error(unsigned int line_number);
+int cool_pchar_error(unsigned int line_number, char *message);
 #endif
