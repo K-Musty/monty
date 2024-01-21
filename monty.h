@@ -70,6 +70,7 @@ int cool_initial_stack(stack_t **stack);
 void cool_free_stack(stack_t **stack);
 int cool_checker(stack_t *stack);
 void cool_token_error(int error_code);
+unsigned int cool_array_len(void)
 
 /*Error func*/
 int cool_int_error(unsigned int line_number);

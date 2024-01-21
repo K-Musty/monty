@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * cool_div_error - This function will print division error
  * @line_number: Our line number in Monty bytecodes file where error occurred.
