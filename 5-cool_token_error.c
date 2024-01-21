@@ -10,7 +10,7 @@ void cool_token_error(int error_code)
 	char **token_s = NULL;
 	char *exit_s = NULL;
 
-	token_len = cool_token_array_len();
+	token_len = cool_array_len();
 	token_s = malloc(sizeof(char *) * (token_len + 2));
 	if (!key_tok)
 	{

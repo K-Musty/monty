@@ -29,13 +29,13 @@ void cool_push(stack_t **stack, unsigned int current)
 			continue;
 		if (key_tok[1][k] < '0' || key_tok[1][k] > '9')
 		{
-			cook_token_error(cool_int_error(current));
+			cool_token_error(cool_int_error(current));
 			return;
 		}
 	}
 	top->n = atoi(key_tok[1]);
 
-	if (cool_monty_check(*stack) == STACK)
+	if (cool_checker(*stack) == STACK)
 	{
 		temp = (*stack)->next;
 		top->prev = *stack;
@@ -62,7 +62,7 @@ void cool_push(stack_t **stack, unsigned int current)
  */
 void cool_pall(stack_t **stack, unsigned int line_number)
 {
-	stack_t temp = (*stack)->next;
+	stack_t *temp = (*stack)->next;
 
 	while (temp)
 	{
