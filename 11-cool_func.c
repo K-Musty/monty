@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * cool_rotr - Function to rotate to bottom
  * @stack: A pointer to the top node

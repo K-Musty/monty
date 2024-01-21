@@ -56,6 +56,10 @@ void cool_pall(stack_t **stack, unsigned int line_number);
 void cool_pint(stack_t **stack, unsigned int line_number);
 void cool_pop(stack_t **stack, unsigned int line_number);
 void cool_swap(stack_t **stack, unsigned int line_number);
+void cool_mon_stack(stack_t **stack, unsigned int line_number);
+void cool_mon_queue(stack_t **stack, unsigned int line_number);
+void cool_rotl(stack_t **stack, unsigned int line_number);
+void cool_rotr(stack_t **stack, unsigned int line_number);
 
 /*Error Function*/
 int cool_pop_error(unsigned int line_number);
@@ -78,5 +82,6 @@ int cool_open_error(char *file_name);
 int cool_malloc_error(void);
 int cool_usage_error(void);
 int cool_unknown_error(char *op_code, unsigned int line_number);
+
 #endif
 
