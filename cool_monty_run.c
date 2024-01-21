@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdlib.h>
 /**
  * cool_monty_run - Function to execute monty
  * @script_fd: File descriptor

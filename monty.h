@@ -9,7 +9,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define " \n\t\a\b"
+#define DELIMS " \n\t\a\b"
 #define STACK 0
 #define QUEUE 1
 extern char **key_tok;
