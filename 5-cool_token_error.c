@@ -1,4 +1,5 @@
 #include "monty.h"
+char **key_tok = NULL;
 /**
  * cool_token_error - This function will element of key_tok
  * @error_c: integer as strijng

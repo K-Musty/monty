@@ -1,6 +1,5 @@
 #include "monty.h"
 
-char **key_tok = NULL;
 
 /**
  * main - Monty interpreter
