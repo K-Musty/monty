@@ -83,5 +83,11 @@ int cool_malloc_error(void);
 int cool_usage_error(void);
 int cool_unknown_error(char *op_code, unsigned int line_number);
 
+/**Stdlib */
+char *get_int(int n);
+unsigned int cool_abs(int);
+int get_nbase_len(unsigned int num, unsigned int base);
+void fill_nbase_buff(unsigned int num, unsigned int base,
+		       char *buff, int buff_size);
 #endif
 
