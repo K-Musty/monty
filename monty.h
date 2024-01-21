@@ -97,5 +97,10 @@ int get_word_count(char *str, char *delims);
 char **strtow(char *str, char *delims);
 int is_delim(char ch, char *delims);
 char *get_next_word(char *str, char *delims);
+void cool_free_tokens(void);
+unsigned int cool_array_len(void);
+int is_empty_line(char *line, char *delims);
+void (*get_op_func(char *opcode))(stack_t**, unsigned int);
+
 #endif
 
