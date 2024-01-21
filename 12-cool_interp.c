@@ -68,4 +68,20 @@ void fill_nbase_buff(unsigned int num, unsigned int base,
 	}
 }
 
+/**
+ * get_nbase_len - Function to get number base length
+ * @n: number for length
+ * @b: base number
+ * Return: integer
+ */
+int get_nbase_len(unsigned int n, unsigned int b)
+{
+	int length = 1; /* all numbers contain atleast one digit */
 
+	while (n > b - 1)
+	{
+		length++;
+		n /= b;
+	}
+	return (length);
+}
