@@ -21,18 +21,18 @@ void cool_pchar(stack_t **stack, unsigned int line_number)
 	printf("%c\n", (*stack)->next->n);
 }
 /**
- * cool_monty_nop - This function does
+ * cool_nop - This function does
  * @stack: pointer to head or tail
  * @line_number: line number
  */
-void cool_monty_nop(stack_t **stack, unsigned int line_number)
+void cool_nop(stack_t **stack, unsigned int line_number)
 {
         (void)stack;
         (void)line_number;
 }
 
 /**
- * cool__pstr - This function will print string in stack_t
+ * cool_pstr - This function will print string in stack_t
  * @stack: poijnter to head
  * @line_number: line number
  */

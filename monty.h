@@ -101,6 +101,12 @@ void cool_free_tokens(void);
 unsigned int cool_array_len(void);
 int is_empty_line(char *line, char *delims);
 void (*get_op_func(char *opcode))(stack_t**, unsigned int);
+void cool_pstr(stack_t **stack, unsigned int line_number);
+void cool_nop(stack_t **stack, unsigned int line_number);
+void cool_pchar(stack_t **stack, unsigned int line_number);
+void cool_rotr(stack_t **stack, unsigned int line_number);
 
+
+int get_line(char **line, size_t *length, FILE *file);
 #endif
 
