@@ -64,4 +64,18 @@ int cool_stack_error(unsigned int line_number, char *p);
 void cool_token_error(int error_code);
 int cool_div_error(unsigned int line_number);
 int cool_pchar_error(unsigned int line_number, char *message);
+
+/**Interpreter func */
+int cool_initial_stack(stack_t **stack);
+void cool_free_stack(stack_t **stack);
+int cool_checker(stack_t *stack);
+void cool_token_error(int error_code);
+
+/*Error func*/
+int cool_int_error(unsigned int line_number);
+int cool_open_error(char *file_name);
+int cool_malloc_error(void);
+int cool_usage_error(void);
+int cool_unknown_error(char *op_code, unsigned int line_number);
 #endif
+
