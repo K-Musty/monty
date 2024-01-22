@@ -6,10 +6,10 @@
  * @line: pointer
  * @length: length
  * @file: file
- */
-int get_line(char **line, size_t *length, FILE *file)
+ *
+int getline(char **line, size_t *length, FILE *file)
 {
-	ssize_t read = get_line(line, length, file);
+	ssize_t read = getline(line, length, file);
 
 	if (read == -1)
 	{
@@ -25,6 +25,8 @@ int get_line(char **line, size_t *length, FILE *file)
 		(*length)--;
 	return 0;
 }
+*/
+
 /**
  * cool_monty_run - Function to execute monty
  * @script_fd: File descriptor
@@ -41,7 +43,7 @@ int cool_monty_run(FILE *script_fd)
 	if (cool_initial_stack(&stack) == EXIT_FAILURE)
 		return (EXIT_FAILURE);
 
-	while (get_line(&line, &length, script_fd) != -1)
+	while (getline(&line, &length, script_fd) != -1)
 	{
 		line_num++;
 		key_tok = strtow(line, DELIMS);

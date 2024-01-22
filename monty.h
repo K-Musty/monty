@@ -107,6 +107,6 @@ void cool_pchar(stack_t **stack, unsigned int line_number);
 void cool_rotr(stack_t **stack, unsigned int line_number);
 
 
-int get_line(char **line, size_t *length, FILE *file);
+int getline(char **line, size_t *length, FILE *file);
 #endif
 

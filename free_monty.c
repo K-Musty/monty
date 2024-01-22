@@ -44,7 +44,7 @@ int is_empty_line(char *line, char *delims)
 	{
 		for (k = 0; delims[k]; k++)
 		{
-			if (line[k] == delims[k])
+			if (line[i] == delims[k])
 				break;
 		}
 		if (delims[k] == '\0')
@@ -92,3 +92,4 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 
 	return (NULL);
 }
+
