@@ -1,31 +1,6 @@
 #include "monty.h"
 #include <string.h>
 #include <stdlib.h>
-/**
- * get_line - get line
- * @line: pointer
- * @length: length
- * @file: file
- *
-int getline(char **line, size_t *length, FILE *file)
-{
-	ssize_t read = getline(line, length, file);
-
-	if (read == -1)
-	{
-		if (feof(file))
-			return -1;
-		else
-		{
-			perror("Error reading line");
-			exit(EXIT_FAILURE);
-		}
-	}
-	if (*length > 0 && (*line)[*length - 1] == '\n')
-		(*length)--;
-	return 0;
-}
-*/
 
 /**
  * cool_monty_run - Function to execute monty
